@@ -1,0 +1,26 @@
+apiVersion: tutorial.my.domain/v1
+kind: Foo
+metadata:
+  name: foo-01
+  labels:
+    app.kubernetes.io/name: foo
+    app.kubernetes.io/instance: foo-sample
+    app.kubernetes.io/part-of: operator-v1
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator-v1
+spec:
+  name: jack
+
+---
+apiVersion: tutorial.my.domain/v1
+kind: Foo
+metadata:
+  name: foo-02
+  labels:
+    app.kubernetes.io/name: foo
+    app.kubernetes.io/instance: foo-sample
+    app.kubernetes.io/part-of: operator-v1
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: operator-v1
+spec:
+  name: jim
